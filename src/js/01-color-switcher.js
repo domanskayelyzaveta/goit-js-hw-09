@@ -1,7 +1,3 @@
-// HTML містить кнопки «Start» і «Stop».
-
-// <button type="button" data-start>Start</button>
-// <button type="button" data-stop>Stop</button>
 
 // Напиши скрипт, який після натискання кнопки «Start», раз на секунду змінює колір фону < body > на випадкове значення,
 // використовуючи інлайн стиль. Натисканням на кнопку «Stop» зміна кольору фону повинна зупинятися.
@@ -19,20 +15,26 @@ function getRandomHexColor() {
 }
 
 const refs = {
-    startBtn: document.querySelector("data-start"),
-    stopBtn: document.querySelector("data-stop"),
+    startBtn: document.querySelector("[data-start]"),
+    stopBtn: document.querySelector("[data-stop]")
 }
 
-const timerId = 123;
-
-refs.startBtn.addEventListener('click', event => {
-    timerId = setInterval(getRandomHexColor, 1000); 
+let intervalId = 123;
+isActive = false;
 
 
+refs.startBtn.addEventListener('click', () => {
+    if (!isActive) {
+        intervalId = setInterval(() => { document.body.style.backgroundColor = getRandomHexColor() }, 1000);
+        isActive = true;
+    }
 });
 
-refs.stopBtn.addEventListener('click', event => {
-    clearInterval(timerId) 
+ 
+refs.stopBtn.addEventListener('click', () => {
+    clearInterval(intervalId);
+    isActive = false;
 });
+
 
 
