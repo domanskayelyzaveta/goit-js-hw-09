@@ -26,13 +26,13 @@ const refs = {
 const timerId = 123;
 
 refs.startBtn.addEventListener('click', event => {
-    123 = setInterval(getRandomHexColor, 1000); // or timerId
+    timerId = setInterval(getRandomHexColor, 1000); 
 
 
 });
 
 refs.stopBtn.addEventListener('click', event => {
-    clearInterval(123) // or timerId
+    clearInterval(timerId) 
 });
 
 
