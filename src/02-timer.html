@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown timer</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+    />
+    <link rel="stylesheet" href="css/timer.css" />
     <link rel="stylesheet" href="css/common.css" />
   </head>
-  <body>
+  <body class="body">
     <p><a href="index.html">Go back</a></p>
 
     <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
+    <button type="button" class="uni-btn" data-start>Start</button>
 
     <div class="timer">
       <div class="field">
@@ -30,7 +36,12 @@
         <span class="label">Seconds</span>
       </div>
     </div>
-
+    <div class="unicorn-image">
+      <img
+        src="/img/—Pngtree—cartoon cartoon unicorn unicorn lovely_3809121.png"
+        alt="Unicorn"
+      />
+    </div>
     <script src="js/02-timer.js" type="module"></script>
   </body>
 </html>

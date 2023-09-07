@@ -1,0 +1,102 @@
+
+
+
+
+.body {
+    background-image: url("/img/skyTwo.jpg");
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.field {
+    text-align: center;
+}
+
+.value {
+    font-size: 24px;
+    color: pink;
+}
+
+.label {
+    font-size: 14px;
+    color: #DDA0DD;
+}
+
+.unicorn-image {
+    margin-bottom: 20px;
+}
+
+.unicorn-image img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+} 
+
+.dayContainer {
+background-color: #FFF0F5;
+font-family: "Poltawski Nowy";
+}
+
+
+.flatpickr-input {
+color: #9370DB;
+background-color: #F8F8FF;
+border: 1px solid #DDA0DD;
+height: 30%;
+font-size: 16px;
+font-family: "Poltawski Nowy";
+}
+
+.flatpickr-current-month  {
+font-family: "Poltawski Nowy";
+}
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+    background-color: pink;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flatpickr-weekdays {
+    background-color: #FFFFF0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Poltawski Nowy" ;
+}
+
+.uni-btn {
+border-radius: 50%;
+border: 1px solid #DDA0DD;
+font-family: "Poltawski Nowy";
+color: #713ae0;
+height: 25px;
+cursor: pointer;
+}
+
+
+.uni-btn:hover {
+color: #bdace0;
+}

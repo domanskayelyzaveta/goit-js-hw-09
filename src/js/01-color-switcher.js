@@ -1,4 +1,5 @@
 
+
 // Напиши скрипт, який після натискання кнопки «Start», раз на секунду змінює колір фону < body > на випадкове значення,
 // використовуючи інлайн стиль. Натисканням на кнопку «Stop» зміна кольору фону повинна зупинятися.
 
@@ -20,20 +21,22 @@ const refs = {
 }
 
 let intervalId = 123;
-isActive = false;
+// isActive = false;
 
 
 refs.startBtn.addEventListener('click', () => {
-    if (!isActive) {
+    // if (!isActive) {
         intervalId = setInterval(() => { document.body.style.backgroundColor = getRandomHexColor() }, 1000);
-        isActive = true;
-    }
+        // isActive = true;
+        refs.startBtn.disabled = true; // або 
+    // }
 });
 
  
 refs.stopBtn.addEventListener('click', () => {
     clearInterval(intervalId);
-    isActive = false;
+    // isActive = false;
+    refs.startBtn.disabled = false; // або
 });
 
 
