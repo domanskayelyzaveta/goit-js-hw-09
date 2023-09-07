@@ -74,7 +74,7 @@ flatpickr(dateTimeEl, {
     enableTime: true,
     time_24hr: true,
     defaultDate: new Date(),
-    minuteIncrement: 5,
+    minuteIncrement: 1,
 
     onClose(selectedDates) {
 
