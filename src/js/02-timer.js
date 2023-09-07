@@ -147,19 +147,17 @@ flatpickr(dateTimeEl, {
         
         };
 
+      
+
+
+    startBtn.addEventListener('click', () => {
         const selectedHours = parseInt(document.querySelector(".flatpickr-time input.flatpickr-hour").value, 10);
         const selectedMinutes = parseInt(document.querySelector(".flatpickr-time input.flatpickr-minute").value, 10);
-        
-
-
-        startBtn.addEventListener('click', () => {
         const selectedDateTime = flatpickr.parseDate(dateTimeEl.value);
-        selectedDateTime.setHours(selectedHours, selectedMinutes, 0, 0);
-         timer.deadline = selectedDateTime;
+        selectedDateTime.setHours(selectedHours, selectedMinutes);
+        timer.deadline = selectedDateTime;
         timer.start()
     });
-
-
 
 
 
